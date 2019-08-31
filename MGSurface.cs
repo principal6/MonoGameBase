@@ -19,7 +19,6 @@ namespace MonoGameBase
     {
         protected string m_AssetDir;
         protected List<MGTextureData> m_Textures = new List<MGTextureData>();
-        public SSize FixedMovementTileSize;
 
         public MGSurface(string asset_dir)
         {
