@@ -6,7 +6,7 @@ using System.IO;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
-namespace DirectX11TutorialLevelEditor
+namespace MonoGameBase
 {
     public class MGTextureData
     {
@@ -18,7 +18,6 @@ namespace DirectX11TutorialLevelEditor
     public class MGSurface : MonoGame.Forms.Controls.InvalidationControl
     {
         protected string m_AssetDir;
-        protected Color m_BGColor = Color.White;
         protected List<MGTextureData> m_Textures = new List<MGTextureData>();
         public SSize FixedMovementTileSize;
 
@@ -26,6 +25,8 @@ namespace DirectX11TutorialLevelEditor
         {
             m_AssetDir = asset_dir;
         }
+
+        public Color BackgroundColor { set; get; } = Color.White;
 
         public void AddBlankTexture()
         {
@@ -70,7 +71,7 @@ namespace DirectX11TutorialLevelEditor
         {
             base.Draw();
 
-            Editor.graphics.Clear(m_BGColor);
+            Editor.graphics.Clear(BackgroundColor);
         }
 
         public void Render()

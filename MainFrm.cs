@@ -2,7 +2,9 @@
 using System.Windows.Forms;
 using System.IO;
 
-namespace DirectX11TutorialLevelEditor
+using Microsoft.Xna.Framework;
+
+namespace MonoGameBase
 {
     public partial class MainFrm : Form
     {
@@ -17,8 +19,10 @@ namespace DirectX11TutorialLevelEditor
             Surface = new MGSurface(KAssetDir)
             {
                 Parent = this,
+                BackgroundColor = new Color(0.4f, 0.8f, 1.0f),
                 Dock = DockStyle.Fill
             };
+            
         }
 
         public MGSurface Surface { get; }

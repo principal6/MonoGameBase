@@ -1,4 +1,4 @@
-﻿namespace DirectX11TutorialLevelEditor
+﻿namespace MonoGameBase
 {
     partial class MainFrm
     {
