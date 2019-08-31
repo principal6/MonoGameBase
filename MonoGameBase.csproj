@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{B35F5EDC-A45C-4E6F-8964-1A308DFD22B9}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>DirectX11TutorialLevelEditor</RootNamespace>
-    <AssemblyName>DirectX11TutorialLevelEditor</AssemblyName>
+    <RootNamespace>MonoGameBase</RootNamespace>
+    <AssemblyName>MonoGameBase</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -83,6 +83,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
