@@ -71,6 +71,8 @@ namespace MonoGameBase
             base.Draw();
 
             Editor.graphics.Clear(BackgroundColor);
+
+            Render();
         }
 
         public void Render()
@@ -84,7 +86,7 @@ namespace MonoGameBase
 
         protected void BeginDrawing()
         {
-            Editor.spriteBatch.Begin();
+            Editor.spriteBatch.Begin(SpriteSortMode.Deferred, BlendState.NonPremultiplied);
         }
 
         protected void DrawAllTextures()

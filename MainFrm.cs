@@ -19,12 +19,18 @@ namespace MonoGameBase
             Surface = new MGSurface(KAssetDir)
             {
                 Parent = this,
-                BackgroundColor = new Color(0.4f, 0.8f, 1.0f),
+                BackgroundColor = new Color(0.4f, 0.8f, 1.0f, 1.0f),
                 Dock = DockStyle.Fill
             };
+
             
         }
 
         public MGSurface Surface { get; }
+
+        private void MainFrm_Load(object sender, EventArgs e)
+        {
+            Surface.AddTextureFromFile("grass_64x64.png");
+        }
     }
 }
